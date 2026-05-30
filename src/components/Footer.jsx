@@ -84,8 +84,13 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold bg-gradient-to-r from-primary-400 to-purple-400 bg-clip-text text-transparent mb-6">
+            <h4 className="group relative text-xl font-bold bg-gradient-to-r from-primary-400 to-purple-400 bg-clip-text text-transparent mb-6 cursor-default inline-block">
               For Job Seekers
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-72 bg-gray-800 border border-gray-700 rounded-xl p-4 text-xs text-gray-300 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-xl">
+                <p className="font-semibold text-white mb-1">For Job Seekers</p>
+                <p>Browse thousands of job listings, save your favourites, and apply with one click. Need help? Contact us at <span className="text-primary-400">support@jobportal.com</span> and our team will get back to you within 24 hours.</p>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-700"></div>
+              </div>
             </h4>
             <ul className="space-y-3">
               <li>
