@@ -115,8 +115,13 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-6">
+            <h4 className="group relative text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-6 cursor-default inline-block">
               For Employers
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-72 bg-gray-800 border border-gray-700 rounded-xl p-4 text-xs text-gray-300 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-xl">
+                <p className="font-semibold text-white mb-1">For Employers</p>
+                <p>Post job openings, manage applications, and find the right candidates fast. Sign up as an employer to access our full suite of hiring tools and reach thousands of qualified job seekers.</p>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-700"></div>
+              </div>
             </h4>
             <ul className="space-y-3">
               <li>
